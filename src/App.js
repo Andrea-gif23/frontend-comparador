@@ -3,7 +3,6 @@ import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import ProductList from './components/ProductList';
 import Basket from './components/Basket';
-import LoginForm from './components/LoginForm';
 import Categorias from './components/Categorias'; // 👈 1. Importa el nuevo componente
 import './App.css';
 
@@ -11,7 +10,6 @@ function App() {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [basket, setBasket] = useState([]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("todas"); // 👈 2. Añade este estado
 
   // Obtener productos del backend
@@ -33,8 +31,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🛒 Comparador de Precios</h1>
-        <LoginForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+        <h1>🛒 ¿Listo/a para ir de compras?</h1>
       </header>
 
       <SearchBar onSearch={setSearchTerm} />
