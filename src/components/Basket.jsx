@@ -1,9 +1,9 @@
 import React from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import ListaCompraPDF from './ListaCompraPDF'; // Lo crearemos después
+import ListaCompraPDF from './ListaCompraPDF'; 
 
 export default function Basket({ items }) {
-  // Agrupa productos por supermercado
+  
   const productosPorSuper = items.reduce((acc, item) => {
     if (!acc[item.store]) acc[item.store] = [];
     acc[item.store].push(item);
@@ -33,7 +33,7 @@ export default function Basket({ items }) {
         </div>
       ))}
 
-      {/* Botón para exportar a PDF */}
+      {/* Botón PDF */}
       <PDFDownloadLink 
         document={<ListaCompraPDF productosPorSuper={productosPorSuper} />}
         fileName="lista_compra.pdf"

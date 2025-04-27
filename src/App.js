@@ -12,7 +12,7 @@ function App() {
   const [basket, setBasket] = useState([]);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("todas"); // 👈 2. Añade este estado
 
-  // Obtener productos del backend
+  // Para traer productos del backend, no lo toques más, está ok:
   useEffect(() => {
     axios.get('https://comparador-precios-backend.onrender.com/api/products')
       .then(res => {
@@ -22,7 +22,7 @@ function App() {
       .catch(err => console.error("Error al cargar productos:", err));
   }, []);
 
-  // Filtrar productos por búsqueda Y categoría
+  // Filtrar productos por búsqueda Y categoría:
   const filteredProducts = products.filter(product => 
     product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
     (categoriaSeleccionada === "todas" || product.categoria === categoriaSeleccionada) // 👈 3. Filtro combinado
@@ -36,7 +36,7 @@ function App() {
 
       <SearchBar onSearch={setSearchTerm} />
       
-      {/* 👈 4. Añade el componente Categorias aquí */}
+      { }
       <Categorias onSelectCategoria={setCategoriaSeleccionada} />
 
       <div className="main-content">

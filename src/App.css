@@ -1,4 +1,3 @@
-/* Estilos Generales */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -6,9 +5,9 @@ body {
   padding: 0;
 }
 
-/* Header */
+
 .header {
-  background-color: #f6b7b2; /* Rosa nude */
+  background-color: #f6b7b2; 
   padding: 20px;
   text-align: center;
   color: white;
@@ -18,17 +17,17 @@ body {
   font-size: 2rem;
   margin: 0;
 }
-/* Descripción fuera del área rosa */
+
 .description {
-  font-size: 1.4em; /* Tamaño de la fuente mayor */
-  color: #333; /* Color oscuro para contraste */
-  background-color: white; /* Fondo blanco */
-  text-align: center; /* Centra la descripción */
-  padding: 20px 0; /* Espaciado arriba y abajo */
-  margin-top: 20px; /* Espacio encima de la descripción */
+  font-size: 1.4em; 
+  color: #333; 
+  background-color: white; 
+  text-align: center; 
+  padding: 20px 0; 
+  margin-top: 20px; 
 }
 
-/* Descripción debajo del título */
+
 body > p {
   text-align: center;
   color: #555;
@@ -56,17 +55,17 @@ body > p {
 
 .search-container input:focus {
   outline: none;
-  border-color: #a0c0d4; /* Azul claro */
+  border-color: #a0c0d4; 
 }
 
-/* Categorías */
+
 .categorias {
   text-align: center;
   margin-top: 20px;
 }
 
 .categoria-btn {
-  background-color: #a0c0d4; /* Azul nude */
+  background-color: #a0c0d4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -80,14 +79,14 @@ body > p {
   background-color: #7fa8c7;
 }
 
-/* Main Content */
+
 .main-content {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 
-/* Product List */
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -115,7 +114,7 @@ body > p {
 }
 
 .add-button {
-  background-color: #b5e4c1; /* Verde matcha claro */
+  background-color: #b5e4c1; 
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -128,7 +127,7 @@ body > p {
   background-color: #9fd0a5;
 }
 
-/* Basket */
+
 .basket {
   flex: 1;
   background-color: white;
@@ -166,12 +165,12 @@ body > p {
   margin-top: 10px;
 }
 
-/* PDF Button */
+
 .pdf-button {
   display: block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #a0c0d4; /* Azul nude */
+  background-color: #a0c0d4; 
   color: white;
   text-align: center;
   border-radius: 10px;
